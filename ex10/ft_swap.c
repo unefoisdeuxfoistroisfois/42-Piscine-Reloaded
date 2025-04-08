@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 15:37:19 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 15:39:51 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/08 17:08:09 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/08 17:10:11 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+void	ft_swap(int *a, int *b)
 {
-	char	lettre;
+	int	temp;
 
-	lettre = 'a';
-	while (lettre <= 'z')
-	{
-		ft_putchar(lettre);
-		lettre++;
-	}
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 /*
-int main(){
-	ft_print_alphabet();
+int	main()
+{
+	int	nombre;
+	int	nombre2;
+
+	nombre = 6;
+	nombre2 = 5;
+
+	ft_swap(&nombre, &nombre2);
+	if(nombre == 5 && nombre2 == 6)
+	{
+		write(1,"OK",2);
+	}
+	else
+	{
+		write(1,"Pas OK",6);
+	}
 }*/

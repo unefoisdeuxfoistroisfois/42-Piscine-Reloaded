@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 15:37:19 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 15:39:51 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/08 15:48:34 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/08 15:57:27 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	lettre;
+	char	nombre;
 
-	lettre = 'a';
-	while (lettre <= 'z')
+	nombre = '0';
+	while (nombre <= '9')
 	{
-		ft_putchar(lettre);
-		lettre++;
+		ft_putchar(nombre);
+		nombre++;
 	}
 }
 /*
-int main(){
-	ft_print_alphabet();
+int	main(){
+	ft_print_numbers();
+	return 0;
 }*/

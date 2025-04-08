@@ -1,31 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 15:37:19 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 15:39:51 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/08 17:29:34 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/08 17:47:27 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+int	ft_iterative_factorial(int nb)
 {
-	char	lettre;
+	int	i;
+	int	somme;
 
-	lettre = 'a';
-	while (lettre <= 'z')
+	i = 1;
+	somme = 1;
+	if (nb == 0)
 	{
-		ft_putchar(lettre);
-		lettre++;
+		return (0);
 	}
+	while (i <= nb)
+	{
+		somme = somme * i;
+		i++;
+	}
+	return (somme);
 }
 /*
-int main(){
-	ft_print_alphabet();
+int main()
+{
+	int	nombre;
+	int	res;
+
+	nombre = 5;
+	
+	res = ft_iterative_factorial(nombre);
+
+	printf("%d",res);
+	return 0;
 }*/
