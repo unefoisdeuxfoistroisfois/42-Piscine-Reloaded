@@ -6,7 +6,7 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 17:29:34 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 17:47:27 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:22:29 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_iterative_factorial(int nb)
 
 	i = 1;
 	somme = 1;
-	if (nb == 0)
+	if (nb < 0)
 	{
 		return (0);
 	}

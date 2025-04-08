@@ -1,41 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 17:53:48 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 23:20:36 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/08 23:46:31 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/08 23:51:22 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+void	ft_putchar(char c);
 
-int	ft_recursive_factorial(int nb)
+void	ft_putstr(char *str)
 {
-	if (nb < 0)
+	int	i;
+
+	i = 0;
+	while(str[i] != '\0')
 	{
-		return (0);
-	}
-	else if (nb == 0 || nb == 1)
-	{
-		return (1);
-	}
-	else
-	{
-		return (nb * ft_recursive_factorial(nb - 1));
+		ft_putchar(str[i]);
+		i++;
 	}
 }
 /*
-int	main()
+int main()
 {
-	int	nombre;
-	int	res;
+	char	*mot;
 
-	nombre = 5;
-	res = ft_recursive_factorial(nombre);
-	
-	printf("%d", res);
-	
+	mot = "Bradley";
+	ft_putstr(mot);
+
+	return 0;
 }*/
