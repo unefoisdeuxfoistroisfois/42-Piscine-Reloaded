@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 16:02:54 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/09 20:03:23 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/09 14:59:02 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/09 20:12:32 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_print_params(char *str)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
 }
 /*
-int	main()
+int main(int argc, char *argv[])
 {
-	int	nombre;
+	int	i;
 
-	nombre = 9;
-	ft_ft(&nombre);
-
-	if(nombre == 42)
+	if (argc > 1)
 	{
-		write(1,"OK", 2);
-	}
-	else
-	{
-		write(1,"PAS OK", 6);
+		i = 1;
+		while(i < argc)
+		{
+			ft_print_params(argv[i]);
+			i++;
+		}
 	}
 	return 0;
 }*/

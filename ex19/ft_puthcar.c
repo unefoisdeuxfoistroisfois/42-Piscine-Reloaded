@@ -1,36 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_puthcar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 16:02:54 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/09 20:03:23 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/09 15:46:04 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/09 17:38:16 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_putchar(char c)
 {
-	*nbr = 42;
+	write(1, &c, 1);
 }
-/*
-int	main()
-{
-	int	nombre;
-
-	nombre = 9;
-	ft_ft(&nombre);
-
-	if(nombre == 42)
-	{
-		write(1,"OK", 2);
-	}
-	else
-	{
-		write(1,"PAS OK", 6);
-	}
-	return 0;
-}*/

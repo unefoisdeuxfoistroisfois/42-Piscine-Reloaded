@@ -6,7 +6,7 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 23:53:16 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/08 23:59:23 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/09 20:06:41 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 	return (i);
 }
-
+/*
 int main()
 {
 	char	*mot;
@@ -34,4 +34,4 @@ int main()
 	printf("%d", res);
 
 	return 0;
-}
+}*/

@@ -1,36 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 16:02:54 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/09 20:03:23 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/09 14:38:26 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/09 20:08:50 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_ft(int *nbr)
+int	ft_strcmp(char *s1, char *s2)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (s1[i] != '\0' && s1[i] == s2[i])
+	{
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
 /*
-int	main()
-{
-	int	nombre;
+int main()
+{	char	*mot;
+	char	*mot2;
+	int	res;
 
-	nombre = 9;
-	ft_ft(&nombre);
+	mot = "Bcradley";
+	mot2 = "Bradley";
 
-	if(nombre == 42)
-	{
-		write(1,"OK", 2);
-	}
-	else
-	{
-		write(1,"PAS OK", 6);
-	}
+	res = ft_strcmp(mot, mot2);
+	printf("%d",res);
 	return 0;
 }*/

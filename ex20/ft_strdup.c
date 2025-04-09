@@ -1,34 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 17:15:45 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/09 20:04:25 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/09 18:08:42 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/09 20:18:08 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+#include <stdio.h>
+#include <stdlib.h>
+
+char	*ft_strdup(char *src)
 {
-	*div = a / b;
-	*mod = a % b;
+	char	*dest;
+	int		i;
+
+	if (src == NULL)
+	{
+		return (NULL);
+	}
+	i = 0;
+	while (src[i] != '\0')
+	{
+		i++;
+	}
+	dest = malloc(sizeof(int) * (i + 1));
+	if (dest == NULL)
+	{
+		return (NULL);
+	}
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (dest);
 }
 /*
 int main()
 {
-	int	nombre;
-	int	nombre2;
-	int	d;
-	int	mod;
+	char	*mot;
+	char	*res;
 
-	nombre = 5;
-	nombre = 3;
-	d = 2;
-	modulo = 3;
+	mot = "Bradley";
 
-	ft_div_mod(nombre, nombre2, d, modulo);
-
-
+	
+	res = ft_strdup(mot);
+	printf("%s", res);
 }*/
