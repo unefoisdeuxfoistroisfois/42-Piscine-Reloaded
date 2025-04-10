@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/09 21:57:37 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/10 15:27:55 by britela-         ###   ########.fr       */
+/*   Created: 2025/04/10 15:40:34 by britela-          #+#    #+#             */
+/*   Updated: 2025/04/10 15:48:36 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+void	ft_forech(int *tab, int length, void(*f)(int))
+{
 
-# define ABS(Value) ((Value) * ((Value) >= 0) - (Value) * ((Value) < 0))
+}
 
-#endif
+int	main
