@@ -6,7 +6,7 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 17:53:48 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/11 23:13:00 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/12 15:48:18 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ int	ft_recursive_factorial(int nb)
 		return (nb * ft_recursive_factorial(nb - 1));
 	}
 }
-i/*
+/*
 int	main()
 {
 	int	nombre;
 	int	res;
 
-	nombre = 5;
+	nombre = 4;
 	res = ft_recursive_factorial(nombre);
 	
 	printf("%d", res);

@@ -6,14 +6,14 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 14:58:40 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/10 15:17:41 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/11 22:24:49 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
-#define FT_POINT_H
+# define FT_POINT_H
 
-typedef struct	s_point
+typedef struct s_point
 {
 	int	x;
 	int	y;

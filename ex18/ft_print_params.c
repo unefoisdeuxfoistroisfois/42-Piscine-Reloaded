@@ -6,11 +6,13 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:59:02 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/09 20:12:32 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/12 15:20:54 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_print_params(char *str)
 {
@@ -19,24 +21,24 @@ void	ft_print_params(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
-	write(1, "\n", 1);
+	ft_putchar('\n');
 }
-/*
-int main(int argc, char *argv[])
+
+int	main(int argc, char *argv[])
 {
 	int	i;
 
 	if (argc > 1)
 	{
 		i = 1;
-		while(i < argc)
+		while (i < argc)
 		{
 			ft_print_params(argv[i]);
 			i++;
 		}
 	}
-	return 0;
-}*/
+	return (0);
+}
