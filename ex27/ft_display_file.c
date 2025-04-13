@@ -6,7 +6,7 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:56:27 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/13 19:31:07 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/13 19:56:24 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(int argc, char *argv[])
 	if (argc < 2)
 		ft_putstr("File name missing.\n");
 	else if (argc > 2)
-		ft_putstr("Too many arguments. \n");
+		ft_putstr("Too many arguments.\n");
 	else
 	{
 		f = open(argv[1], O_RDONLY);
