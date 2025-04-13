@@ -6,7 +6,7 @@
 /*   By: britela- <britela-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:56:27 by britela-          #+#    #+#             */
-/*   Updated: 2025/04/13 19:56:24 by britela-         ###   ########.fr       */
+/*   Updated: 2025/04/13 20:38:30 by britela-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	main(int argc, char *argv[])
 		f = open(argv[1], O_RDONLY);
 		if (f == -1)
 		{
-			ft_putstr("Error opening file.\n");
+			ft_putstr("Cannot read file.\n");
 			return (1);
 		}
 		else
